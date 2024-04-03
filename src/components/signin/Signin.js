@@ -14,7 +14,7 @@ function Signin() {
 
     return (
         <section className="flex justify-center h-screen">
-            <div className="flex flex-col gap-4 px-[1.5rem] py-10 w-[375px] max-w-full border-2">
+            <div className="flex flex-col gap-4 px-[1.5rem] py-10 w-[375px] max-w-full border-2 bg-[#F7F8F9]">
                 <h1 className="text-3xl font-semibold">
                     Signin to your <br /> PopX account
                 </h1>

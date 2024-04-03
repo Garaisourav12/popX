@@ -5,7 +5,7 @@ function Home() {
     const navigate = useNavigate();
     return (
         <section className="flex justify-center h-screen">
-            <div className="flex flex-col justify-end gap-4 px-[1.5rem] py-6 w-[375px] max-w-full border-2">
+            <div className="flex flex-col justify-end gap-4 px-[1.5rem] py-6 w-[375px] max-w-full border-2 bg-[#F7F8F9]">
                 <h1 className="text-3xl font-semibold">Welcome to PopX</h1>
                 <p className="text-gray-400">
                     Lorem ipsum dolor sit amet, <br /> consectetur adipiscing

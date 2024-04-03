@@ -8,7 +8,7 @@ import Profile from "./components/profile/Profile.js";
 
 function App() {
     return (
-        <main className="bg-[#F7F8F9]">
+        <main>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/sign-up" element={<Signup />} />

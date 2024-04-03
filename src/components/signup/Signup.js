@@ -24,7 +24,7 @@ function Signup() {
 
     return (
         <section className="flex justify-center h-screen">
-            <div className="flex flex-col gap-4 px-[1.5rem] py-6 w-[375px] max-w-full h-full border-2">
+            <div className="flex flex-col gap-4 px-[1.5rem] py-6 w-[375px] max-w-full h-full border-2 bg-[#F7F8F9]">
                 <h1 className="text-3xl font-semibold">
                     Create your <br /> PopX account
                 </h1>
@@ -75,7 +75,6 @@ function Signup() {
                             onChange={(e) => setPass(e.target.value)}
                         />
                         <TextField
-                            required
                             // id="outlined-required"
                             label="Company Name"
                             placeholder="Enter Company Name"
@@ -85,7 +84,10 @@ function Signup() {
                         />
 
                         <div className="flex flex-col">
-                            <FormLabel id="demo-row-radio-buttons-group-label">
+                            <FormLabel
+                                id="demo-row-radio-buttons-group-label"
+                                required
+                            >
                                 Are you an Agency?
                             </FormLabel>
                             <RadioGroup
@@ -97,12 +99,16 @@ function Signup() {
                             >
                                 <FormControlLabel
                                     value="Yes"
-                                    control={<Radio />}
+                                    control={
+                                        <Radio name="row-radio-buttons-group" />
+                                    }
                                     label="Yes"
                                 />
                                 <FormControlLabel
                                     value="No"
-                                    control={<Radio />}
+                                    control={
+                                        <Radio name="row-radio-buttons-group" />
+                                    }
                                     label="No"
                                 />
                             </RadioGroup>
