@@ -38,6 +38,7 @@ function Signup() {
                     onSubmit={handleSubmit}
                 >
                     <div className="flex flex-col gap-3">
+                        {/* MUI name input */}
                         <TextField
                             required
                             // id="outlined-required"
@@ -47,6 +48,8 @@ function Signup() {
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                         />
+
+                        {/* MUI phone no. input */}
                         <TextField
                             required
                             // id="outlined-required"
@@ -56,6 +59,8 @@ function Signup() {
                             value={phone}
                             onChange={(e) => setPhone(e.target.value)}
                         />
+
+                        {/* MUI email input */}
                         <TextField
                             required
                             // id="outlined-required"
@@ -65,6 +70,8 @@ function Signup() {
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                         />
+
+                        {/* MUI password input */}
                         <TextField
                             required
                             // id="outlined-required"
@@ -74,6 +81,8 @@ function Signup() {
                             value={pass}
                             onChange={(e) => setPass(e.target.value)}
                         />
+
+                        {/* MUI company name input */}
                         <TextField
                             // id="outlined-required"
                             label="Company Name"
@@ -83,6 +92,7 @@ function Signup() {
                             onChange={(e) => setCompany(e.target.value)}
                         />
 
+                        {/* MUI Radio Button group for agency confermation */}
                         <div className="flex flex-col">
                             <FormLabel
                                 id="demo-row-radio-buttons-group-label"
@@ -114,6 +124,8 @@ function Signup() {
                             </RadioGroup>
                         </div>
                     </div>
+
+                    {/* Create account button */}
                     <button
                         type="submit"
                         className="pointer flex items-center justify-center bg-[#6C25FF] text-white font-medium rounded-[6px] p-[.8rem] hover:shadow-lg duration-[.4s]"
